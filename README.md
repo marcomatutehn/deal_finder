@@ -1,1 +1,5 @@
-# deal_finder
+# Deal Finder
+
+Backend
+
+Fronted
