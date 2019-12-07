@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for amazon project
+# Scrapy settings for deal_price project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'amazon'
+BOT_NAME = 'deal_price'
 
-SPIDER_MODULES = ['amazon.spiders']
-NEWSPIDER_MODULE = 'amazon.spiders'
+SPIDER_MODULES = ['deal_price.spiders']
+NEWSPIDER_MODULE = 'deal_price.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'amazon (+http://www.yourdomain.com)'
+#USER_AGENT = 'deal_price (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'amazon.middlewares.AmazonSpiderMiddleware': 543,
+#    'deal_price.middlewares.DealPriceSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'amazon.middlewares.AmazonDownloaderMiddleware': 543,
+#    'deal_price.middlewares.DealPriceDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'amazon.pipelines.AmazonPipeline': 300,
+#    'deal_price.pipelines.DealPricePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

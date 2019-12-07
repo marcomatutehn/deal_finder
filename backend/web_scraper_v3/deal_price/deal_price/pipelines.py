@@ -6,6 +6,6 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 
-class AmazonPipeline(object):
+class DealPricePipeline(object):
     def process_item(self, item, spider):
         return item
