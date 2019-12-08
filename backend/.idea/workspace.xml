@@ -64,7 +64,7 @@
       <updated>1575685951573</updated>
       <workItem from="1575685957931" duration="613000" />
       <workItem from="1575688093134" duration="1308000" />
-      <workItem from="1575689558076" duration="1875000" />
+      <workItem from="1575689558076" duration="6556000" />
     </task>
     <servers />
   </component>
@@ -72,10 +72,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="351" y="73" key="SettingsEditor" timestamp="1575686021083">
+    <state x="351" y="73" key="SettingsEditor" timestamp="1575695225179">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
-    <state x="351" y="73" key="SettingsEditor/0.23.1440.804@0.23.1440.804" timestamp="1575686021083" />
+    <state x="351" y="73" key="SettingsEditor/0.23.1440.804@0.23.1440.804" timestamp="1575695225179" />
     <state x="384" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1575689568421">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
