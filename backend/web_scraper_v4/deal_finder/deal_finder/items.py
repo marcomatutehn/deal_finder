@@ -8,7 +8,7 @@
 import scrapy
 
 
-class DealPriceItem(scrapy.Item):
+class DealFinderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
 
@@ -16,4 +16,3 @@ class DealPriceItem(scrapy.Item):
     product_title = scrapy.Field()
     product_price = scrapy.Field()
     product_image = scrapy.Field()
-

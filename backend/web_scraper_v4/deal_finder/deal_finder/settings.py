@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for deal_price project
+# Scrapy settings for deal_finder project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,20 +9,17 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'deal_price'
+BOT_NAME = 'deal_finder'
 
-SPIDER_MODULES = ['deal_price.spiders']
-NEWSPIDER_MODULE = 'deal_price.spiders'
+SPIDER_MODULES = ['deal_finder.spiders']
+NEWSPIDER_MODULE = 'deal_finder.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'deal_price (+http://www.yourdomain.com)'
-#USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+#USER_AGENT = 'deal_finder (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
-
-PROXY_POOL_ENABLED = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -50,26 +47,14 @@ PROXY_POOL_ENABLED = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'deal_price.middlewares.DealPriceSpiderMiddleware': 543,
+#    'deal_finder.middlewares.DealFinderSpiderMiddleware': 543,
 #}
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'deal_price.middlewares.DealPriceDownloaderMiddleware': 543,
+#    'deal_finder.middlewares.DealFinderDownloaderMiddleware': 543,
 #}
-
-DOWNLOADER_MIDDLEWARES = {
-    # ...
-    'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
-    'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
-    # ...
-}
-
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -80,7 +65,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'deal_price.pipelines.DealPricePipeline': 300,
+#    'deal_finder.pipelines.DealFinderPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
