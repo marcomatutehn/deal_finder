@@ -5,16 +5,24 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import psycopg2
+import configparser
 
+config = configparser.ConfigParser()
+config.read('db.cfg')
+
+HOSTNAME = config['POSTGRESS_DB']['HOSTNAME']
+DB_USERNAME = config['POSTGRESS_DB']['DB_USERNAME']
+DB_PASSWORD = config['POSTGRESS_DB']['DB_PASSWORD']
+DATABASE = config['POSTGRESS_DB']['DATABASE']
 
 class DealFinderPipeline(object):
 
     def open_spider(self, spider):
 
-        hostname = 'ec2-174-129-254-249.compute-1.amazonaws.com'
-        username = 'chqwaffuxlymwy'
-        password = '10e2e9e33509b52bb51dbbfaee48217ab6a4e3e4dd4de08952636a4ab9d7fb58'
-        database = 'df3bo7fod72kks'
+        hostname = HOSTNAME
+        username = DB_USERNAME
+        password = DB_PASSWORD
+        database = DATABASE
 
         self.connection = psycopg2.connect(
             host=hostname,
