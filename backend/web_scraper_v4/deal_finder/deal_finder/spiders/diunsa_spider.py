@@ -2,6 +2,7 @@
 import scrapy
 from ..items import DealFinderItem
 
+
 class DiunsaSpiderSpider(scrapy.Spider):
     name = 'diunsa'
     start_urls = ['http://diunsa.hn/']
@@ -18,3 +19,5 @@ class DiunsaSpiderSpider(scrapy.Spider):
         # items['product_image_link'] = product_image_link
 
         yield items
+
+

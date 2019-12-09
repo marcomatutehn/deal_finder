@@ -1,1 +1,4 @@
-project: 420345
+projects:
+  project: 420345
+requirements:
+  file: requirements.txt
