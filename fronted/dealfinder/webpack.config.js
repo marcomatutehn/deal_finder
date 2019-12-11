@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -33,6 +34,7 @@ module.exports = {
                 test: /\.svg$/,
                 loader: 'svg-inline-loader'
             },
+
         ],
     },
     plugins: [
@@ -40,5 +42,6 @@ module.exports = {
             template: './public/index.html',
             filename: './index.html',
         }),
-    ],
+
+    ]
 };
