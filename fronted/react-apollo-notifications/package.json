@@ -3,7 +3,6 @@
   "version": "0.1.2",
   "description": "Notification component that uses a GraphQL subscription query",
   "license": "MIT",
-  "repository": "crofoot/react-apollo-notifications",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
