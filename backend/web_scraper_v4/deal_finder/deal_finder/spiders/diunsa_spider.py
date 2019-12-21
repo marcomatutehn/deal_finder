@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 import scrapy
+
 from ..items import DealFinderItem
 
 
 class DiunsaSpiderSpider(scrapy.Spider):
     name = 'diunsa'
-    start_urls = ['http://diunsa.hn/']
+    start_urls = ['https://www.diunsa.hn/es/electronica-tecnologia/televisores']
 
     def parse(self, response):
         items = DealFinderItem()

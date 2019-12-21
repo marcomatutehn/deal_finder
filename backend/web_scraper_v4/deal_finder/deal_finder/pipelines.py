@@ -17,6 +17,7 @@ import psycopg2
 class DealFinderPipeline(object):
 
     def open_spider(self, spider):
+        # scrapy crawl diunsa
 
         hostname = 'ec2-107-21-108-37.compute-1.amazonaws.com'
         username = 'wrlnpeatctnkaw'
@@ -36,6 +37,7 @@ class DealFinderPipeline(object):
         self.connection.close()
 
     def process_item(self, item, spider):
+
         self.cur.execute(
             "insert into tbl_deal_content(article,price) values(%s,%s)",
                           (item['product_title'], item['product_price'])
